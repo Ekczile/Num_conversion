@@ -46,6 +46,7 @@ class TestNumeralConversion < Minitest::Test
         assert_equal("CCC", 300.romanizer())
     end
     def test_for_50_equals_D
+        assert_equal("CD", 400.romanizer())
         assert_equal("D", 500.romanizer())
     end
 end
