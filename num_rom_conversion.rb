@@ -7,7 +7,7 @@ class Integer
         x = self
         roman = ""
         numerals.each do |key, value|
-            roman << key
+            roman << key * x
         end
         roman
     end
