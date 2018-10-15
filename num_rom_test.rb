@@ -53,6 +53,9 @@ class TestNumeralConversion < Minitest::Test
     end
     def test_for_1000_equals_M
         assert_equal("CM", 900.romanizer())
+        assert_equal("CMLII", 952.romanizer())
         assert_equal("M", 1000.romanizer())
+        assert_equal("MCCXII", 1212.romanizer())
+        assert_equal("MMCCXII", 2212.romanizer())
     end
 end
