@@ -5,8 +5,9 @@ class String
              "I" => 1
         }
        result = 0
+       x = self
        numbers.each do |key, value|
-       result += value
+       result += value * (x.scan(/#{key}/).count)
         end
         return result
     end
