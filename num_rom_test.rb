@@ -34,11 +34,15 @@ class TestNumeralConversion < Minitest::Test
         assert_equal("XXX", 30.romanizer())
     end
     def test_50_equals_L
+        assert_equal("XL", 40.romanizer())
         assert_equal("L", 50.romanizer())
+        assert_equal("LV", 55.romanizer())
+        assert_equal("LXV", 65.romanizer())
     end
     def test_100_equals_C
         assert_equal("C", 100.romanizer())
         assert_equal("CC", 200.romanizer())
         assert_equal("CCC", 300.romanizer())
     end
+
 end
