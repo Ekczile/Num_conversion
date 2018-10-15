@@ -19,6 +19,7 @@ class TestNumberConversion < Minitest::Test
         assert_equal(7, "VII".de_romanizer())
     end
     def test_that_10_equal_X
+        assert_equal(9, "IX".de_romanizer())
         assert_equal(10, "X".de_romanizer())
     end
 end
