@@ -2,6 +2,7 @@ class Integer
 
     def romanizer()
         numerals = {
+            "V" => 5,
             "IV" => 4,
             "I" => 1
         }
