@@ -10,6 +10,8 @@ class TestNumeralConversion < Minitest::Test
         assert_equal(String, 1.romanizer().class) 
     end
     def test_1_equal_I
-        assert_equal("I", 1.romanizer())  
+        assert_equal("I", 1.romanizer()) 
+        assert_equal("II", 2.romanizer())  
     end
+
 end
