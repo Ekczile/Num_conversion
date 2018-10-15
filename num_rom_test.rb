@@ -17,7 +17,15 @@ class TestNumeralConversion < Minitest::Test
     def test_4_equals_IV
         assert_equal("IV", 4.romanizer())
     end
-    def test_5_quals_V
+    def test_5_equals_V
         assert_equal("V", 5.romanizer())
+    end
+    def test_6_7_8
+        assert_equal("VI", 6.romanizer())
+        assert_equal("VII", 7.romanizer())
+        assert_equal("VIII", 8.romanizer())
+    end
+    def test_9_equals_IX
+        assert_equal("IX", 9.romanizer())
     end
 end
