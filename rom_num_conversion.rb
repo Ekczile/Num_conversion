@@ -2,7 +2,7 @@ class String
 
     def de_romanizer()
         numbers = {
-            
+            "X" => 10,
             "IV" => 4,
             "V" => 5,
             "I" => 1,
