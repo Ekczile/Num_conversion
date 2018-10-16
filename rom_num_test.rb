@@ -55,5 +55,6 @@ class TestNumberConversion < Minitest::Test
         assert_equal(1595, "MDXCV".de_romanizer())
         assert_equal(1599, "MDXCVIIII".de_romanizer())
         assert_equal(1945, "MCMXLV".de_romanizer())
+        assert_equal(1999, "MCMXCVIIII".de_romanizer())
     end
 end
