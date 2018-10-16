@@ -36,5 +36,6 @@ class TestNumberConversion < Minitest::Test
         assert_equal(90, "XC".de_romanizer())
         assert_equal(100, "C".de_romanizer())
         assert_equal(150, "CL".de_romanizer())
+        assert_equal(125, "CXXV".de_romanizer())
     end
 end
