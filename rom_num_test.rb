@@ -28,5 +28,6 @@ class TestNumberConversion < Minitest::Test
     def test_that_50_equals_L
         assert_equal(40, "XL".de_romanizer())
         assert_equal(50, "L".de_romanizer())
+        assert_equal(45, "XLV".de_romanizer())
     end
 end
