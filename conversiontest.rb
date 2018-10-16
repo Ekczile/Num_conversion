@@ -9,4 +9,7 @@ class Testallconversions < Minitest::Test
     def test_number_to_roman
         assert_equal(3, "III".de_romanizer())
     end
+    def test_roman_to_number
+        assert_equal("III", 3.romanizer())
+    end
 end
