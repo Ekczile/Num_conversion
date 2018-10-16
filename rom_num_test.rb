@@ -25,4 +25,7 @@ class TestNumberConversion < Minitest::Test
         assert_equal(15, "XV".de_romanizer())
         assert_equal(18, "XVIII".de_romanizer())
     end
+    def test_that_50_equals_L
+        assert_equal(50, "L".de_romanizer())
+    end
 end
