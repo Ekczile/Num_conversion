@@ -29,5 +29,6 @@ class TestNumberConversion < Minitest::Test
         assert_equal(40, "XL".de_romanizer())
         assert_equal(50, "L".de_romanizer())
         assert_equal(45, "XLV".de_romanizer())
+        assert_equal(48, "XLVIII".de_romanizer())
     end
 end
