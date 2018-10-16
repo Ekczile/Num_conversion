@@ -2,6 +2,7 @@ class String
 
     def de_romanizer()
         numbers = {
+            "CD" => 400,
             "D" => 500,
             "XC" => 90,
             "C" => 100,
