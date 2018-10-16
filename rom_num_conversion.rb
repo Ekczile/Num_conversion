@@ -2,6 +2,7 @@ class String
 
     def de_romanizer()
         numbers = {
+            "C" => 100,
             "XL" => 40,
             "L" => 50,
             "IX" => 9,
