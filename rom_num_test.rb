@@ -39,12 +39,15 @@ class TestNumberConversion < Minitest::Test
         assert_equal(125, "CXXV".de_romanizer())
         assert_equal(195, "CXCV".de_romanizer())
     end
-    def test_that_500_equals_
+    def test_that_500_equals_D
         assert_equal(400, "CD".de_romanizer())
         assert_equal(500, "D".de_romanizer())
         assert_equal(545, "DXLV".de_romanizer())
         assert_equal(555, "DLV".de_romanizer())
         assert_equal(595, "DXCV".de_romanizer())
         assert_equal(599, "DXCVIIII".de_romanizer())
+    end
+    def test_that_1000_equals_M
+        assert_equal(1000, "M".de_romanizer())
     end
 end
