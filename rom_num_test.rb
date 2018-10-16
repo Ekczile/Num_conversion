@@ -44,6 +44,7 @@ class TestNumberConversion < Minitest::Test
         assert_equal(545, "DXLV".de_romanizer())
         assert_equal(555, "DLV".de_romanizer())
         assert_equal(595, "DXCV".de_romanizer())
+        assert_equal(599, "DXCVIIII".de_romanizer())
 
     end
 end
