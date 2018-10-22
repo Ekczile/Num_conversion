@@ -19,8 +19,11 @@ class String
        result = 0
        x = self
         numbers.each do |key, value|
+            # increments result by value times x times the key.
         result += value * (x.scan(/#{key}/).count)
         temp = [key]
+        # for each item counted and stored in temp go through each
+        # and substitute each integer with each string.
         temp.each {|v| x.sub!(v, '')}
         end
         return result

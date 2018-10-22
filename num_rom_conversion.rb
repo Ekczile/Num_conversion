@@ -17,9 +17,12 @@ class Integer
             "I" => 1
         }
         x = self
+        # roman = a string
         roman = ""
         numerals.each do |key, value|
+            # shovel key times variable x divided by the value
             roman << key * (x/value)
+            # returning the remainder of the value as x
             x %= value
         end
         roman
